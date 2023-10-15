@@ -18,7 +18,11 @@
 - Very Dark Blue (Light Mode Text): hsl(200, 15%, 8%)
 - Dark Gray (Light Mode Input): hsl(0, 0%, 52%)
 - Very Light Gray (Light Mode Background): hsl(0, 0%, 98%)
-- White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%) */
+- White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%) 
+- Mobile: 375px
+- Desktop: 1440px
+
+*/
 }
 
 @media (prefers-color-scheme: dark) {
@@ -121,4 +125,5 @@ body {
   background-color: var(--clr-secondary);
   color: var(--font-clr);
   font-family: var(--ff-primary);
+  font-size: var(--fs-100);
 }
