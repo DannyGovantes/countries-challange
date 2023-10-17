@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Where in the world?",
   description:
-    "An visual API that let you see all of the countries all around the world",
+    "A visual API that let you see all of the countries all around the world",
 };
 
 export default function RootLayout({ children }) {

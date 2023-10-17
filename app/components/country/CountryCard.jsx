@@ -1,16 +1,20 @@
+import Link from "next/link";
 import React from "react";
 
-export function CountryCard() {
+export function CountryCard({ name, population, region, capital, image }) {
   return (
     <>
-      <div>
-        <h3>Country name</h3>
+      <Link href={`/country/${name}`}>
         <div>
-          <span>Population</span>
-          <span>Region </span>
-          <span>Capital </span>
+          <h3>{name}</h3>
+          <div>
+            <img src={image} alt={`${name} Flag`} />
+            <span>Population: {population}</span>
+            <span>Region: {region} </span>
+            <span>Capital:{capital} </span>
+          </div>
         </div>
-      </div>
+      </Link>
     </>
   );
 }

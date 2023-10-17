@@ -3,16 +3,18 @@
 export function Navbar() {
   return (
     <>
-      <nav>
-        <div>
-          <span>Where in the world?</span>
-        </div>
-        <div>
-          <div>
-            <span>Dark Mode</span>
+      <header className="navigation">
+        <nav className="nav-primary container">
+          <div className="navigation-title">
+            <span>Where in the world?</span>
           </div>
-        </div>
-      </nav>
+          <div>
+            <div>
+              <span>Dark Mode</span>
+            </div>
+          </div>
+        </nav>
+      </header>
     </>
   );
 }

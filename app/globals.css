@@ -127,3 +127,22 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-100);
 }
+.container {
+  --max-width: 1400px;
+  --padding: 2rem;
+  max-width: min(var(--max-width), 100% - var(--padding));
+  margin-inline: auto;
+}
+.navigation {
+  background-color: var(--clr-primary);
+}
+.nav-primary {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation-title {
+  font-weight: var(--fw-200);
+  font-size: var(--fs-200);
+}
