@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { CountryCard } from "./components";
+import { CountriesWrapper, DropDown, SearchBar } from "./components";
 
 export default function Home() {
   const [countries, setCountries] = useState([]);
@@ -16,18 +16,11 @@ export default function Home() {
   return (
     <>
       <div>
-        {countries?.map((country) => {
-          return (
-            <CountryCard
-              key={country.name}
-              name={country.name}
-              capital={country.capital}
-              population={country.population}
-              region={country.region}
-              image={country.flag}
-            />
-          );
-        })}
+        <div>
+          <SearchBar />
+          <DropDown />
+        </div>
+        <CountriesWrapper countries={countries} />
       </div>
     </>
   );
